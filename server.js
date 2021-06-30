@@ -25,12 +25,12 @@ if (process.env.NODE_ENV === 'production') {
 // Send requests up to the React app
 
 app.get('/', function(req, res) {
-    res.sendFile(path.joint(__dirname, './client/punlic/index.html'));
+    res.sendFile(path.joint(__dirname, './client/public/index.html'));
 });
 
 // Define Mongoose Connection
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hikes', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/game', {
     useNewUrlParser: true,
     useUnifiedTopology: true 
 });
