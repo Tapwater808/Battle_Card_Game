@@ -1,4 +1,4 @@
-import kaboom from "kaboom";
+import k from "kaboom";
 
 function HelloWorld () {
     k.add([

@@ -1,0 +1,22 @@
+{
+  "name": "battle_card_game",
+  "version": "1.0.0",
+  "description": "A Card Battler ",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tapwater808/Battle_Card_Game.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tapwater808/Battle_Card_Game/issues"
+  },
+  "homepage": "https://github.com/Tapwater808/Battle_Card_Game#readme",
+  "dependencies": {
+    "kaboom": "^0.5.1"
+  }
+}

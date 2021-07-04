@@ -1,10 +1,11 @@
 import kaboom from 'kaboom'
 
 export const k = kaboom({
-	width: 320,
-	height: 240,
+	global: true,
+	fullscreen: true,
 	scale: 2,
-	clearColor: [0, 0, 0, 1]
+	debug: true,
+	clearColor: [0,0,0,1],
 })
 
 export default k
