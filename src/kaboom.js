@@ -1,11 +1,10 @@
-import kaboom from 'kaboom'
+import kaboom from "../node_modules/kaboom/dist/kaboom.mjs";
 
 export const k = kaboom({
-	global: true,
-	fullscreen: true,
+	width: 320,
+	height: 240,
 	scale: 2,
-	debug: true,
-	clearColor: [0,0,0,1],
+	clearColor: [0, 0, 0, 1]
 })
 
 export default k
