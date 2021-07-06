@@ -1,27 +1,31 @@
 {
-  "name": "Card-Battler",
+  "name": "battle_card_game",
   "version": "1.0.0",
-  "description": "Card-Battle-Server",
-  "main": "server.js",
+  "description": "A Card Battler ",
+  "main": "src/index.html",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "start": "parcel src/index.html -p 8000",
+		"build": "parcel build src/index.html --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tapwater808/Battle_Card_Game.git"
   },
+  "author": "Charles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tapwater808/Battle_Card_Game/issues"
+  },
+  "homepage": "https://github.com/Tapwater808/Battle_Card_Game#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.12.8",
-    "morgan": "^1.10.0",
-    "react-router-dom": "^5.2.0"
-  }
+    "kaboom": "^0.5.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "alias": {
+		"kaboom": "./node_modules/kaboom/dist/kaboom.mjs"
+	},
+  "parcelCleanPaths": [
+		"dist"
+	]
 }
